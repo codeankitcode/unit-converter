@@ -7,16 +7,21 @@ console.log(massEl)
 // console.log(inputVal)
 
 
-// 1 meter = 3.281 feet
-// 1 liter = 0.264 gallon
-// 1 kilogram = 2.204 pound
+const meterToFeet = 3.281
+const literToGallon = 0.264
+const kilosToPound = 2.204
+
+// inputEl.addEventListener("click", function(){
+//     lenghtEl.textContent = ""
+// })
+
+// can I create another function which calls this on click calls this func and also clear out the earlier text
 
 btn.addEventListener("click", function(){
-    lenghtEl.innerHTML += ""
     const inputVal = inputEl.value 
-    lenghtEl.innerHTML += `${inputVal} meters = ${Number(inputVal * 3.281).toFixed(2)} feet | ${inputVal} feet = ${Number(inputVal / 3.281).toFixed(2)} meters`
-    volumeEl.innerHTML += `${inputVal} liters = ${Number(inputVal * 0.264).toFixed(2)} gallons | ${inputVal} gallons = ${Number(inputVal / 0.264).toFixed(2)} liters`
-    massEl.innerHTML += `${inputVal} kilos = ${Number(inputVal * 2.204).toFixed(2)} pounds | ${inputVal} pounds = ${Number(inputVal / 2.204).toFixed(2)} kilos`
+    lenghtEl.innerHTML += `${inputVal} meters = ${Number(inputVal * meterToFeet).toFixed(3)} feet | ${inputVal} feet = ${Number(inputVal / meterToFeet).toFixed(3)} meters`
+    volumeEl.innerHTML += `${inputVal} liters = ${Number(inputVal * literToGallon).toFixed(3)} gallons | ${inputVal} gallons = ${Number(inputVal / literToGallon).toFixed(3)} liters`
+    massEl.innerHTML += `${inputVal} kilos = ${Number(inputVal * kilosToPound).toFixed(3)} pounds | ${inputVal} pounds = ${Number(inputVal / kilosToPound).toFixed(3)} kilos`
 
     
 })
