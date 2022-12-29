@@ -19,10 +19,13 @@ const kilosToPound = 2.204
 
 btn.addEventListener("click", function(){
     const inputVal = inputEl.value 
-    lenghtEl.innerHTML += `${inputVal} meters = ${Number(inputVal * meterToFeet).toFixed(3)} feet | ${inputVal} feet = ${Number(inputVal / meterToFeet).toFixed(3)} meters`
-    volumeEl.innerHTML += `${inputVal} liters = ${Number(inputVal * literToGallon).toFixed(3)} gallons | ${inputVal} gallons = ${Number(inputVal / literToGallon).toFixed(3)} liters`
-    massEl.innerHTML += `${inputVal} kilos = ${Number(inputVal * kilosToPound).toFixed(3)} pounds | ${inputVal} pounds = ${Number(inputVal / kilosToPound).toFixed(3)} kilos`
+
+    lenghtEl.innerHTML += `<p>${inputVal} meters = ${Number(inputVal * meterToFeet).toFixed(3)} feet | ${inputVal} feet = ${Number(inputVal / meterToFeet).toFixed(3)} meters</p>`
+    volumeEl.innerHTML += `<p>${inputVal} liters = ${Number(inputVal * literToGallon).toFixed(3)} gallons | ${inputVal} gallons = ${Number(inputVal / literToGallon).toFixed(3)} liters</p>`
+    massEl.innerHTML += `<p>${inputVal} kilos = ${Number(inputVal * kilosToPound).toFixed(3)} pounds | ${inputVal} pounds = ${Number(inputVal / kilosToPound).toFixed(3)} kilos</p>`
 
     
 })
+
+
 
