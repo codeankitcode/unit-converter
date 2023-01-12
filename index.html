@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>unit-converter</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="header"> 
+    <header class="header">
+        <div class="container">
             <h1>Metric/Imperial Unit Conversion</h1>
             <label for="input-el"><input type="text" id="input-el"></label>
             <button id="btn">Convert</button>
         </div>
-        <div class="box" id="length-el">
-            <h3>Length (Meter/Feet)</h3>
-            <!-- <p id="length-el"></p> -->
+    </header>
+    <section class="" >
+        <div class="container">
+            <div class="box" id="length-el">
+                <h3>Length (Meter/Feet)</h3>
+                <!-- <p id="length-el"></p> -->
+            </div>
         </div>
-        <div class="box" id="volume-el">
-            <h3>Volume (Liters/Gallons)</h3>
-            <!-- <p id="volume-el"></p> -->
+    
+        <div class="container">
+            <div class="box" id="volume-el">
+                <h3>Volume (Liters/Gallons)</h3>
+                <!-- <p id="volume-el"></p> -->
+            </div>
         </div>
-        <div class="box" id="mass-el">
-            <h3>Mass (Kilograms/Pound)</h3>
-            <!-- <p id="mass-el"></p> -->
+    
+
+        <div class="container">
+            <div class="box" id="mass-el">
+                <h3>Mass (Kilograms/Pound)</h3>
+                <!-- <p id="mass-el"></p> -->
+            </div>
         </div>
-       
-    </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
+
 </html>
